@@ -1,0 +1,10 @@
+# Core Requirements (Minimum)
+pillow>=9.0.0           # Image processing
+requests>=2.25.0        # HTTP requests for APIs
+
+# Translation APIs (choose one or more)
+deepl>=1.15.0           # DeepL API (recommended for quality)
+
+opencv-python>=4.5.0    # Computer vision
+pytesseract>=0.3.10     # Tesseract OCR wrapper
+
