@@ -1,37 +1,4 @@
 #!/usr/bin/env python3
-
-"""
-Batch Image Translation with Advanced Sentence Grouping
-Extracts text with coordinates, translates via Google Translate API,
-then groups words into sentences using IMPROVED algorithm that handles:
-  - Speech bubbles (vertical stacking)
-  - Multi-line dialog boxes
-  - Proximity-based grouping (horizontal gaps)
-  - Column-based grouping (same x-position)
-
-Features:
-- Bulk process indexed images (01.webp, 02.webp, etc.)
-- Extracts text with exact coordinates (x, y, width, height)
-- Translates directly with Google Translate (no DeepL)
-- Advanced grouping: handles speech bubbles, dialogs, columns
-- Saves JSON files with sentences + word coordinates
-- Resume capability (skip existing)
-- Range processing (--start 1 --end 50)
-- Configurable grouping parameters
-
-Setup:
-1. Set up Google Cloud Vision (see GOOGLE_VISION_SETUP.md)
-2. export GOOGLE_APPLICATION_CREDENTIALS="/path/to/key.json"
-3. pip install google-cloud-vision google-cloud-translate
-
-Usage:
-    # Process all images, translate to English
-    python batch_translate_google.py --input-dir ./images --output-dir ./json_data
-    
-    # Adjust grouping thresholds
-    python batch_translate_google.py --input-dir ./images --output-dir ./json_data --vertical-gap 25
-"""
-
 import sys
 import json
 import argparse
