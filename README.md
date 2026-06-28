@@ -17,7 +17,7 @@ Run the Python file.
 - mac/Linux: export GOOGLE_APPLICATION_CREDENTIALS="/path/to/your-key.json"
 
 ### Command options
-Basic use: `python batch_translate_google_advanced.py --input-dir INPUT --output-dir OUTPUT [options]`
+Basic use: `python main.py --input-dir INPUT --output-dir OUTPUT [options]`
 
 Options:
 - `--lang`
